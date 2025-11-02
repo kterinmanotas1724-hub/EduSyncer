@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EduSyncer - Smart Academic Validation</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+    header, footer { background: #004080; color: white; text-align: center; padding: 20px; }
+    section { padding: 20px; }
+    .features, .testimonials { display: flex; gap: 20px; flex-wrap: wrap; }
+    .feature-box, .testimonial-box { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); flex: 1; min-width: 250px; }
+    form, .simulation { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); max-width: 500px; margin: auto; }
+    input, textarea { width: 100%; padding: 10px; margin: 10px 0; border-radius: 4px; border: 1px solid #ccc; }
+    button { background: #004080; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background: #003060; }
+    .btn-group { text-align: center; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>EduSyncer</h1>
+    <p>Smart Academic Validation for Institutions</p>
+  </header>
+
+  <section>
+    <h2>Why EduSyncer?</h2>
+    <p>EduSyncer helps students and institutions validate academic deliverables with precision and speed. It integrates ISO 9000 standards and generates comparative reports automatically.</p>
+    <div class="btn-group">
+      <button onclick="alert('Feature comparison coming soon!')">Compare Features</button>
+      <button onclick="scrollToSection('contact')">Contact Us</button>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature-box">
+      <h3>📄 Evidence Sync</h3>
+      <p>Upload and sync academic files across platforms.</p>
+      <button onclick="alert('Upload feature will be available soon.')">Upload Evidence</button>
+    </div>
+    <div class="feature-box">
+      <h3>📊 Comparative Reports</h3>
+      <p>Generate visual comparisons of student submissions.</p>
+      <button onclick="alert('Report generator is under development.')">Generate Report</button>
+    </div>
+    <div class="feature-box">
+      <h3>✅ ISO 9000 Compliance</h3>
+      <p>Ensure every document meets institutional standards.</p>
+      <button onclick="alert('Compliance checker coming soon.')">Check Compliance</button>
+    </div>
+  </section>
+
+  <section class="simulation">
+    <h2>📷 Simulation Preview</h2>
+    <p>Here’s a visual mockup of how EduSyncer compares academic submissions:</p>
+    <img src="simulation-placeholder.jpg" alt="Simulation of EduSyncer dashboard">
+    <button onclick="alert('Simulation preview not available yet.')">View Full Simulation</button>
+  </section>
+
+  <section id="contact">
+    <h2>📬 Contact Us</h2>
+    <form onsubmit="submitForm(event)">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>💬 Testimonials</h2>
+    <div class="testimonials">
+      <div class="testimonial-box">
+        <p>"EduSyncer transformed how we validate student projects. It's fast, reliable, and professional!"</p>
+        <strong>- Prof. Linda Gomez</strong>
+      </div>
+      <div class="testimonial-box">
+        <p>"I love how easy it is to generate reports and meet ISO standards. A must-have for any institution."</p>
+        <strong>- Carlos Mendez, Academic Coordinator</strong>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 EduSyncer. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert("Thank you for contacting us! We'll get back to you soon.");
+      document.querySelector("form").reset();
+    }
+
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
